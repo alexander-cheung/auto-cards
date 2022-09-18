@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+	<script src="../scripts/dark.js"></script>
+	<link rel="stylesheet" href="../styles.css">
+	<meta charset="UTF-8">
+</head>
+
+<body id="exportBody" data-rm="export">
+	<h1 class="header">Export</h1>
+	<div class="container" id="exportCont">
+		<div style="margin-bottom: 5px">
+			<h2 class="subhead-one">Options</h2>
+			<div class="checklist">
+				<input type="checkbox" id="addTrans" checked class="check-input">
+				<label class="flex check-label" for="addTrans">
+					Include Transliteration
+					<span class="tool" data-tip="Add card transliterations in the exported file(s)">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label><br>
+			</div>
+			<label class="select-label" for="fileMode">Output Mode:</label>
+			<div class="select-dropdown inline-select" style="width:35%;display:inline-block;">
+				<select id="fileMode">
+					<option selected value="oneFile">One File</option>
+					<option value="allFiles">Many Files</option>
+				</select>
+			</div>
+			<span class="tool" data-tip="Export all categories into one file, or into separate files">
+				<span class="icon-info-circle"></span>
+			</span><br>
+		</div>
+		<button id="export">Export</button>
+	</div>
+
+	<script src="../scripts/menu.js"></script>
+	<script src="../scripts/export.js"></script>
+</body>
+</html>

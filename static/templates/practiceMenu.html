@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+	<script src="../scripts/dark.js"></script>
+	<link rel="stylesheet" href="../styles.css">
+	<meta charset="UTF-8">
+</head>
+
+<body id="practiceMenuBody" data-rm="practiceMenu">
+	<h1 class="header">Practice</h1>
+	<div id="pMenuCont" class="container">
+		<div id="options">
+			<h2 class="subhead-one">Options</h2>
+			
+			<div class="checklist">
+				<input type="checkbox" id="studyDue" class="check-input">
+				<label for="studyDue" class="flex check-label">
+					Only Practice Due Cards
+					<span class="tool" data-tip="Cards that are not yet due for review will not be shown">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label><br>
+			</div>
+
+			<label class="select-label" for="cardMode">Practice Mode</label>
+			<div class="select-dropdown">
+				<select id="cardMode">
+					<option selected value="front">Front to Back</option>
+					<option value="back">Back to Front</option>
+					<option value="both">Both</option>
+				</select><br>
+			</div>
+
+			<label class="select-label" for="cardAmt">Max Cards</label>
+			<div class="select-dropdown" style="width: 25%">
+				<select id="cardAmt">
+					<option value="15">15</option>
+					<option selected value="30">30</option>
+					<option value="60">60</option>
+					<option value="100">100</option>
+					<option value="500">500</option>
+					<option value="1000">1000</option>
+					<option value="all">All</option>
+				</select>
+			</div>
+
+		</div>
+		<button type="button" id="practice">Practice</button>
+	</div>
+
+	<script src="../scripts/menu.js"></script>
+	<script src="../scripts/practiceMenu.js"></script>
+</body>
+</html>

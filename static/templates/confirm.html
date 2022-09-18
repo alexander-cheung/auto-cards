@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+	<script src="../scripts/dark.js"></script>
+	<link rel="stylesheet" href="../styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<h1 class="header">Confirm</h1>
+	<div style="display: none;" class="container">
+		<div class="collapsible">
+			<input class="coll-input" type="checkbox" id="cards-1">
+			<label class="coll-label" for="cards-1">
+				<h1 class="coll-header header">Created Cards</h1>
+			</label>
+			
+		  	<div id="toKeep" class="coll-cont">
+		  		<div class="flex card" id="catData">
+			  		<div id="nameDiv">
+						<label for="ctgName" class="input-label">Category Name:</label>
+						<input id="ctgName" class="text-input" type="text" maxlength="100">
+					</div>
+
+			    	<div id="existDiv">
+						<div id="or">or:</div>
+						<div class="inline-select select-dropdown">
+							<select id="addToCat">
+								<option value="Default">Add to an existing category</option>
+								<option value="Default">None</option>
+							</select>
+						</div>
+					</div>
+		  		</div>
+				<hr>
+				<div class="card">
+					<label for="lang" class="input-label">Input Language:</label>
+					<div class="inline-select select-dropdown">
+						<select id="lang"></select>
+					</div>
+				</div>
+		  	</div>
+		</div>
+
+		<div class="collapsible">
+			<input class="coll-input" type="checkbox" id="cards-2">
+		  	
+			<label class="coll-label" for="cards-2">
+				<h1 class="coll-header header">Blocked Cards</h1>
+			</label>
+
+		  	<div id="toBlock" class="coll-cont">
+				<div class="card">
+			    	<p>These cards will be blocked from future card sets.</p>
+				</div>
+			</div>
+		</div>
+
+		<button id="confirm">Confirm</button>
+	</div>
+
+	<script src="../scripts/confirm.js"></script>
+</body>
+</html>

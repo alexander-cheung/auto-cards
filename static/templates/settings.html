@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+	<script src="../scripts/dark.js"></script>
+	<link rel="stylesheet" href="../styles.css">
+	<meta charset="UTF-8">
+</head>
+
+<body id="settingsBody" data-rm="settings">
+	<h1 class="header">Settings</h1>
+	<div class="container" id="settingsCont">
+		<h3 class="subhead-one">Display</h3>
+		<div class="checklist">
+			<input checked type="checkbox" id="darkMode" class="check-input">
+			<label class="check-label" for="darkMode">Dark Mode</label><br>
+		</div>
+		
+		<h3 class="subhead-one" id="createHead">Card Creation</h3>
+			<div class="checklist">
+				<input checked type="checkbox" id="zhOption" class="check-input">
+				<label class="flex check-label" for="zhOption">
+					Differ Between Chinese Scripts
+					<span class="tool" data-tip="Blocked words in traditional Chinese will only apply for filtering traditional texts, and simplified words with simplified texts">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label><br>
+				
+			</div>
+			<div class="checklist">
+				<input type="checkbox" id="transliterate" class="check-input">
+				<label class="flex check-label" for="transliterate">
+					Transliterate Cards
+					<span class="tool" data-tip="If applicable, cards will be automatically transliterated into the target language">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label><br>
+			</div>
+		<h3 class="subhead-one" id="practiceHead">Daily Practice</h3>
+			<label class="select-label" for="dailyMode">Card Mode</label>
+			<div class="select-dropdown">
+				<select id="dailyMode">
+					<option selected value="front">Front to Back</option>
+					<option value="back">Back to Front</option>
+					<option value="both">Both</option>
+				</select><br>
+			</div>
+
+			<label class="select-label" for="dailyMax">Max Cards</label>
+			<div class="select-dropdown" style="width:25%">
+				<select id="dailyMax">
+					<option value="15">15</option>	
+					<option selected value="30">30</option>
+					<option value="60">60</option>
+					<option value="100">100</option>
+					<option value="500">500</option>
+					<option value="1000">1000</option>
+					<option value="all">All</option>
+				</select><br>
+			</div>
+		<h3 class="subhead-one" style="margin:0">Scheduling</h3>
+		<div class="input-chunk" id="scheduleChunk">
+			<div>
+				<label class="number-label" for="gradInt">
+					Graduating Interval
+					<span class="tool" data-tip="Days until studying after a card is learned with Good">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="gradInt" min="1" max="100" value="1">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="gradIntBtn"></button>
+			</div>
+			
+			<div>
+				<label class="number-label" for="easyInt">
+					Easy Interval
+					<span class="tool" data-tip="Days until studying after a card is learned with Easy">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="easyInt" min="1" max="100" value="4">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="easyIntBtn"></button>
+			</div>
+			
+			<div>
+				<label class="number-label" for="startEase">
+					Starting Ease
+					<span class="tool" data-tip="Default ease for a card">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="startEase" min="131" max="500" value="250">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="startEaseBtn"></button>
+			</div>
+			
+			<div>
+				<label class="number-label" for="easyBonus">
+					Easy Bonus
+					<span class="tool" data-tip="Multiplier applied to interval when Easy is pressed">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="easyBonus" min="100" max="500" value="130">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="easyBonusBtn"></button>
+			</div>
+			
+			<div>
+				<label class="number-label" for="intMod">
+					Interval Modifier
+					<span class="tool" data-tip="Multiplier applied to all intervals. Higher = less studying, lower = more studying">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="intMod" min="50" max="200" value="100">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="intModBtn"></button>
+			</div>
+			
+			<div>
+				<label class="number-label" for="hardInt">
+					Hard Interval
+					<span class="tool" data-tip="Multiplier applied to interval when Hard is pressed">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="hardInt" min="50" max="130" value="120">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="hardIntBtn"></button>
+			</div>
+			
+			<div>
+				<label class="number-label" for="newInt">
+					New Interval
+					<span class="tool" data-tip="Interval applied when pressing Fail">
+						<span class="icon-info-circle"></span>
+					</span>
+				</label>
+
+				<div class="number">
+					<input type="number" id="newInt" min="0" max="100" value="70">
+				</div>
+				<button type="button" class="icon-reset" title="Reset to Default" id="newIntBtn"></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="../scripts/menu.js"></script>
+	<script src="../scripts/settings.js"></script>
+</body>
+</html>

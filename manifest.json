@@ -1,0 +1,27 @@
+{
+	"name": "Automated Flashcards",
+	"manifest_version": 3,
+	"version": "1.0",
+	"description": "Automate language flashcard creation and practice.",
+	"permissions": [
+		"contextMenus",
+		"storage"
+	], "host_permissions": [
+		"https://segment-api-bluelovers.vercel.app/",
+		"https://microsoft-translator-text.p.rapidapi.com/transliterate",
+		"https://translo.p.rapidapi.com/api/v3/translate",
+		"https://zh-en-dict.vercel.app/api/conv",
+		"https://zh-en-dict.vercel.app/api/translate",
+		"https://zh-en-dict.vercel.app/HSK",
+		"https://fast-and-highly-accurate-language-detection.p.rapidapi.com/detect"
+	], "action": {
+    	"default_popup": "static/templates/menu.html"
+	}, "background": {
+		"service_worker": "background.js"
+	}, "icons": {
+		"16": "static/icons/icon16.png",
+		"32": "static/icons/icon32.png",
+		"48": "static/icons/icon48.png",
+		"128": "static/icons/icon128.png"
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+	<script src="../scripts/dark.js"></script>
+	<link rel="stylesheet" href="../styles.css">
+	<meta charset="UTF-8">
+</head>
+
+<body id="blockBody" data-rm="block">
+	<h1 class="header">Ban</h1>
+
+	<div class="container" id="blockCont">
+		<div class="collapsible" id="banSets">
+			<input class="coll-input" type="checkbox" id="banSetInput" checked>
+			<label class="coll-label" for="banSetInput">
+				<h1 class="coll-header header">
+					Ban Sets
+					<div class="right-icon">
+						<button id="addSet" class="icon-only" type="button" title="Add a Ban Set"></button>
+					</div>
+				</h1>
+				
+			
+			</label>
+		  	<div class="coll-cont" id="banContainer">
+		  		<div class="card" id="replace">
+					<p>Cards that you have blocked will be shown here.</p>
+		  		</div>
+		  	</div>
+		</div>
+
+		<div class="collapsible">
+			<input class="coll-input" type="checkbox" id="hskSets">
+			<label class="coll-label" for="hskSets">
+				<h1 class="coll-header header">HSK Sets</h1>
+			</label>
+		  	<div class="coll-cont">
+				<div class="card">
+					Select different HSK (汉语水平考试) Sets to automatically block them from being added to your cards (Simplified Only).
+				</div>
+				<hr>
+				<div class="card" id="hsk">
+					<input type="checkbox" id="hsk1" class="list" value="1">
+					<label class="list-label" for="hsk1">HSK 1</label><br>
+					<input type="checkbox" id="hsk2" class="list" value="2">
+					<label class="list-label" for="hsk2">HSK 2</label><br>
+					<input type="checkbox" id="hsk3" class="list" value="3">
+					<label class="list-label" for="hsk3">HSK 3</label><br>
+					<input type="checkbox" id="hsk4" class="list" value="4">
+					<label class="list-label" for="hsk4">HSK 4</label><br>
+					<input type="checkbox" id="hsk5" class="list" value="5">
+					<label class="list-label" for="hsk5">HSK 5</label><br>
+					<input type="checkbox" id="hsk6" class="list" value="6">
+					<label class="list-label" for="hsk6">HSK 6</label><br>
+				</div>
+		  	</div>
+		</div>
+	</div>
+
+	<script src="../scripts/menu.js"></script>
+	<script src="../scripts/block.js"></script>
+</body>
+</html>
