@@ -12,7 +12,7 @@
 		"https://translo.p.rapidapi.com/api/v3/translate",
 		"https://zh-en-dict.vercel.app/api/conv",
 		"https://zh-en-dict.vercel.app/api/translate",
-		"https://zh-en-dict.vercel.app/HSK",
+		"https://zh-en-dict.vercel.app/api/HSK",
 		"https://fast-and-highly-accurate-language-detection.p.rapidapi.com/detect"
 	], "action": {
     	"default_popup": "static/templates/menu.html"
