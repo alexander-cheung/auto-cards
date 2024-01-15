@@ -1,0 +1,1 @@
+Chrome Extension used to easily create langauge flashcards. Highlight any body of text online and the extension will filter + translate the text and create flashcards. Spaced repetition, ban lists, and streamlined UI for daily language practice in the browser.
