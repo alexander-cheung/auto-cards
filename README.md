@@ -12,7 +12,7 @@ A page will appear where you can confirm your cards and block unwanted cards. Bl
 
 To access your cards, click on the extension icon/puzzle piece at the top right of the browser, and click "Automated Flashcards". 
 
-![alt text]([https://github.com/alexander-cheung/auto-cards/blob/master/images/Menu.png](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.03%20AM.png))
+![alt text](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.03%20AM.png)
 
 Some different features of the extension:
 
@@ -22,15 +22,15 @@ Practice Specific Categories:
 
 Edit Cards/Categories:
 
-![alt text]([https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.26%20AM.png](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.16.05%20AM.png))
+![alt text](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.16.05%20AM.png)
 
 Export Cards to other apps:
 
-![alt text]([[https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.26%20AM.png](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.16.05%20AM.png)](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.16.26%20AM.png))
+![alt text](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.16.26%20AM.png)
 
 Customize Extension Settings:
 
-![alt text]([https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.26%20AM.png](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.45%20AM.png))
+![alt text](https://github.com/alexander-cheung/auto-cards/blob/master/images/Screen%20Shot%202024-10-09%20at%201.15.45%20AM.png)
 
 Practicing is also streamlined, as the extension implements a spaced repetition algorithm based on the Anki system. Any cards due for studying will automatically appear for practicing once the extension popup is opened. Feedback to the cards (Fail, Hard, Good, Easy) will determine when the card is scheduled for later review.
 ----------------------------------------------  
